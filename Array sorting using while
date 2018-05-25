@@ -1,0 +1,30 @@
+class ArrSort
+{
+public static void main(String... args)
+{
+int[] arr={9,8,7,6,5,4,3,2,1,0};
+boolean t=true;
+while(t)
+{int count=1;
+	
+for (int i=0;i<arr.length-1;i++)
+{
+
+if(arr[i]>arr[i+1])
+{int temp=arr[i];
+arr[i]=arr[i+1];
+arr[i+1]=temp;}
+else{
+ count++;
+continue;
+}}
+
+if(count==arr.length)
+{
+t=false;}
+}
+System.out.println("new array is");
+for (int i=0;i<arr.length;i++)
+{
+System.out.println(arr[i]);}
+}}
